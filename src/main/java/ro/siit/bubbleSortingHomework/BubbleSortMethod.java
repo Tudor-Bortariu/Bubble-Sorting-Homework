@@ -1,6 +1,7 @@
 package ro.siit.bubbleSortingHomework;
 
 public class BubbleSortMethod {
+
     /**
      * This is the bubble sort function. At the beginning of the while, it assigns a boolean variable to false in order for the
      * if function to start and proceed with the loop. The loop compares the number at position i with the number at position i+1
@@ -8,7 +9,6 @@ public class BubbleSortMethod {
      * temporary variable.
      * @param numbers represents an array of objects from the SalesRepresentatives class.
      */
-
     public static void sortSalesValues(SalesRepresentatives[] numbers) {
         boolean swap = true;
 
