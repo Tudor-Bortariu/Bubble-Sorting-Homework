@@ -1,5 +1,7 @@
 package ro.siit.bubbleSortingHomework;
 
+import java.util.Arrays;
+
 public class Main {
 
     /**
@@ -15,10 +17,8 @@ public class Main {
         salesReport[3] = new SalesRepresentatives("Max Stones", 12, 583);
         salesReport[4] = new SalesRepresentatives("Sarah James", 30, 498);
 
-        System.out.println("Before:");
-        for (SalesRepresentatives representatives : salesReport) {
-            System.out.println(representatives);
-        }
+        System.out.println("Before: " + Arrays.toString(salesReport));
+
 
         BubbleSortMethod.sortSalesValues(salesReport);
 
