@@ -1,4 +1,4 @@
-package ro.siit.libraryCatalogue;
+package ro.siit.userInputLibraryCatalogue;
 
 public class Novels extends Books {
     private final String type;

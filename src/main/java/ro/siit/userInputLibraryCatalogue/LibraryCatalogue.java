@@ -1,4 +1,4 @@
-package ro.siit.libraryCatalogue;
+package ro.siit.userInputLibraryCatalogue;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package ro.siit.libraryCatalogue;
+package ro.siit.userInputLibraryCatalogue;
 
 public class ArtAlbums extends Books{
     private final String paperQuality;

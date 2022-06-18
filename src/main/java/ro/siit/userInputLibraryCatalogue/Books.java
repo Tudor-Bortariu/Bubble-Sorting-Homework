@@ -1,4 +1,4 @@
-package ro.siit.libraryCatalogue;
+package ro.siit.userInputLibraryCatalogue;
 
 public class Books {
     private final String name;
