@@ -20,6 +20,5 @@ public class Main {
 
         newCatalogue.deleteBook(annaKarenina);
 
-        EnterCommand.enterCommand(newCatalogue);
     }
 }

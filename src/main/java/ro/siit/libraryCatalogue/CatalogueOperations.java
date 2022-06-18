@@ -2,7 +2,7 @@ package ro.siit.libraryCatalogue;
 
 import java.util.Scanner;
 
-public class InsertBookInList {
+public class CatalogueOperations {
     /**
      * This code asks the user to write the name of the book to add to the list and stores that value as string.
      * It asks for the number of pages of the book and stores that value as int.

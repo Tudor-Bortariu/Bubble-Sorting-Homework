@@ -19,9 +19,9 @@ public class EnterCommand {
         if (command.equals("Print") || command.equals("print") || command.equals("PRINT")) {
             System.out.println(newCatalogue.getCatalogue());
         } else if (command.equals("Add") || command.equals("add") || command.equals("ADD")) {
-            InsertBookInList.addBook(newCatalogue);
+            CatalogueOperations.addBook(newCatalogue);
         } else if(command.equals("Delete") || command.equals("delete") || command.equals("DELETE")){
-            InsertBookInList.deleteBook(newCatalogue);
+            CatalogueOperations.deleteBook(newCatalogue);
         } else{
             System.out.println("Command not recognised. Please try again!");
         }
