@@ -20,5 +20,7 @@ public class Main {
 
         newCatalogue.deleteBook(annaKarenina);
 
+        System.out.println(newCatalogue);
+
     }
 }
