@@ -5,7 +5,7 @@ public  abstract class Car implements Vehicle{
     private int tireSize;
     private final float fuelTankSize;
     private final String fuelType;
-    private double availableFuel;
+    double availableFuel;
     private final int gears;
     private final double consumptionPer100Km;
 
@@ -54,8 +54,12 @@ public  abstract class Car implements Vehicle{
         return gears;
     }
 
+    public void setAvailableFuel(double availableFuel) {
+        this.availableFuel = availableFuel;
+    }
+
     public void start() {
-        this.availableFuel = this.availableFuel - 0.05;
+        setAvailableFuel(this.availableFuel - (this.availableFuel * 0.05));
     }
 
     public void stop() {
@@ -69,23 +73,15 @@ public  abstract class Car implements Vehicle{
      */
     @Override
     public void drive(double kilometers) {
-        if(this.tireSize <= 18){
-            this.availableFuel = this.availableFuel - ((this.getConsumptionPer100Km()/100)*kilometers);
+        double estimatedConsumedFuel = (this.getConsumptionPer100Km() / 100) * kilometers;
+        if(this.availableFuel == 0 || estimatedConsumedFuel > this.availableFuel){
+            System.out.println("Not enough fuel!");
+        }else if(this.tireSize <= 18){
+            setAvailableFuel(this.availableFuel - ((this.getConsumptionPer100Km() / 100) * kilometers));
         }else{
-            this.availableFuel = this.availableFuel - (((this.getConsumptionPer100Km()+1)/100)*kilometers);
+            setAvailableFuel(this.availableFuel - (((this.getConsumptionPer100Km() + 1 ) / 100) * kilometers));
         }
     }
 
-    /**
-     * This method decreases the available fuel from the car at every gear shift.
-     * @param gear gives the gear you want to shift into.
-     */
-    public void shiftGear(int gear) {
-        if(gear <= this.getGears()){
-            this.availableFuel = this.availableFuel - 0.01;
-        }else{
-            System.out.println("Gear not available!");
-        }
-    }
 }
 
