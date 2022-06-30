@@ -16,11 +16,11 @@ public class EnterCommand {
         System.out.println("Enter command PRINT, ADD or DELETE");
         String command = keyboard.next();
 
-        if (command.equals("Print") || command.equals("print") || command.equals("PRINT")) {
+        if (command.equalsIgnoreCase("print")) {
             System.out.println(newCatalogue.getCatalogue());
-        } else if (command.equals("Add") || command.equals("add") || command.equals("ADD")) {
+        } else if (command.equalsIgnoreCase("add")) {
             CatalogueOperations.addBook(newCatalogue);
-        } else if(command.equals("Delete") || command.equals("delete") || command.equals("DELETE")){
+        } else if(command.equalsIgnoreCase("Delete")){
             CatalogueOperations.deleteBook(newCatalogue);
         } else{
             System.out.println("Command not recognised. Please try again!");
