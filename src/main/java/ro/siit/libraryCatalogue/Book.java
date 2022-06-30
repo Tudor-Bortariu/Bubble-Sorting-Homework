@@ -1,6 +1,6 @@
 package ro.siit.libraryCatalogue;
 
-public class Books {
+public class Book {
     private final String name;
     private final int numberOfPages;
 
@@ -10,7 +10,7 @@ public class Books {
      * @param name is a string parameter which describes the name of the book.
      * @param numberOfPages is the total number of pages of the book.
      */
-    public Books(String name, int numberOfPages) {
+    public Book(String name, int numberOfPages) {
         this.name = name;
         this.numberOfPages = numberOfPages;
     }

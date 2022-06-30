@@ -1,6 +1,6 @@
 package ro.siit.libraryCatalogue;
 
-public class ArtAlbums extends Books {
+public class ArtAlbum extends Book {
     private final String paperQuality;
 
     /**
@@ -10,7 +10,7 @@ public class ArtAlbums extends Books {
      * @param numberOfPages is the total number of pages of the album.
      * @param paperQuality is a string parameter describing the paper type of the album.
      */
-    public ArtAlbums(String name, int numberOfPages, String paperQuality) {
+    public ArtAlbum(String name, int numberOfPages, String paperQuality) {
         super(name, numberOfPages);
         this.paperQuality = paperQuality;
     }

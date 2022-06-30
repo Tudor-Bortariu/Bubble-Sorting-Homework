@@ -5,11 +5,11 @@ public class Main {
 
         LibraryCatalogue newCatalogue = new LibraryCatalogue();
 
-        Books annaKarenina = new Novels("Anna Karenina", 864, "Fiction");
-        Books joyful = new ArtAlbums("Joyful", 57, "Photographic");
-        Books theGreatGatsby = new Novels("The Great Gatsby", 532, "Realism");
-        Books donQuixote = new Novels("Don Quixote", 1077, "Fiction");
-        Books earth = new ArtAlbums("Earth", 322, "Photographic");
+        Book annaKarenina = new Novel("Anna Karenina", 864, "Fiction");
+        Book joyful = new ArtAlbum("Joyful", 57, "Photographic");
+        Book theGreatGatsby = new Novel("The Great Gatsby", 532, "Realism");
+        Book donQuixote = new Novel("Don Quixote", 1077, "Fiction");
+        Book earth = new ArtAlbum("Earth", 322, "Photographic");
 
         newCatalogue.addBook(annaKarenina);
         newCatalogue.addBook(joyful);

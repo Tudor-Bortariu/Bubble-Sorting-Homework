@@ -1,6 +1,6 @@
 package ro.siit.libraryCatalogue;
 
-public class Novels extends Books {
+public class Novel extends Book {
     private final String type;
 
     /**
@@ -10,7 +10,7 @@ public class Novels extends Books {
      * @param numberOfPages is the total number of pages of the novel.
      * @param type is a string parameter describing the type of the novel.
      */
-    public Novels(String name, int numberOfPages, String type) {
+    public Novel(String name, int numberOfPages, String type) {
         super(name, numberOfPages);
         this.type = type;
     }
