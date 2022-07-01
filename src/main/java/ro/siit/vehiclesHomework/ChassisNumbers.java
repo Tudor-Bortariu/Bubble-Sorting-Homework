@@ -9,7 +9,8 @@ public class ChassisNumbers {
         chassisNumbers.add(chassisNumber);
     }
 
-    public void listContainsNumber(String chassisNumber){
+    public boolean listContainsNumber(String chassisNumber){
         chassisNumbers.contains(chassisNumber);
+        return true;
     }
 }
