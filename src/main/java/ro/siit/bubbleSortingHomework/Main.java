@@ -1,6 +1,7 @@
 package ro.siit.bubbleSortingHomework;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
@@ -26,5 +27,12 @@ public class Main {
         for (SalesRepresentatives salesRepresentatives : salesReport) {
             System.out.println(salesRepresentatives);
         }
+
+        //Java 8 Sorting Method to improve Bubble Sorting
+
+        BubbleSortMethod bubbleSortMethod = new BubbleSortMethod();
+
+        List<SalesRepresentatives> updatedReport = bubbleSortMethod.alternativeSorting(salesReport);
+        System.out.println(updatedReport);
     }
 }

@@ -1,5 +1,10 @@
 package ro.siit.bubbleSortingHomework;
 
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class BubbleSortMethod {
 
     /**
@@ -24,5 +29,16 @@ public class BubbleSortMethod {
                 }
             }
         }
+    }
+
+    /**
+     * Updated sorting method using Java 8 (Streams & Method Reference) to improve Bubble Sorting.
+     * @param salesRepresentatives represents an array of SalesRepresentatives objects that is passed for sorting.
+     * @return Returns a sorted list of Sales Representatives.
+     */
+    public List<SalesRepresentatives> alternativeSorting(SalesRepresentatives[] salesRepresentatives){
+
+        return Arrays.stream(salesRepresentatives).sorted(Comparator.comparingDouble(SalesRepresentatives::getSalesValue).reversed()).collect(Collectors.toList());
+
     }
 }
